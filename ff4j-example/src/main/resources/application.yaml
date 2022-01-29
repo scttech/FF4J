@@ -1,0 +1,22 @@
+ff4j:
+  webconsole:
+    enable: true
+    url: /ff4j-web-console
+    secure: true
+    username: admin
+    password: password
+spring:
+  sql:
+    init:
+      mode: "always"
+  h2:
+    console.enabled: true
+  dataSource:
+    url: jdbc:h2:mem:mydb
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+    hibernate.ddl-auto: create
+
